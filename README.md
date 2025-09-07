@@ -1,6 +1,8 @@
 # credifacil
 
-A new Flutter project.
+Flutter project.
+
+Aplicativo para gereciamento de clientes.
 
 ## Getting Started
 
