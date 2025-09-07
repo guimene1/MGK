@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../atoms/custom_button.dart';
-import '../atoms/custom_text.dart';
 import '../molecules/login_field.dart';
 import '../data/db_helper.dart';
 import '../screens/dashboard_page.dart';
@@ -28,7 +27,6 @@ class _LoginFormState extends State<LoginForm> {
         context,
         MaterialPageRoute(builder: (_) => const DashboardPage()),
       );
-      // TODO: Navegar para tela principal
     } else {
       ScaffoldMessenger.of(
         context,
@@ -46,6 +44,7 @@ class _LoginFormState extends State<LoginForm> {
           label: "Senha",
           isPassword: true,
         ),
+        const SizedBox(height: 20),
         CustomButton(text: "Entrar", onPressed: _login),
       ],
     );

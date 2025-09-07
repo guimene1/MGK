@@ -4,6 +4,7 @@ import 'login_page.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
+  
 
   void _logout(BuildContext context) {
     Navigator.pushReplacement(
@@ -17,3 +18,5 @@ class DashboardPage extends StatelessWidget {
     return DashboardTemplate(onLogout: () => _logout(context));
   }
 }
+
+

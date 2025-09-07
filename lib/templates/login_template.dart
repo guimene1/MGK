@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../atoms/custom_text.dart';
 import '../organisms/login_form.dart';
-
+import '../atoms/footer.dart' as footer;
 class LoginTemplate extends StatelessWidget {
   const LoginTemplate({super.key});
 
@@ -25,6 +25,7 @@ class LoginTemplate extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: const footer.Footer(text: 'MGK direitos reservados.'),
     );
   }
 }
